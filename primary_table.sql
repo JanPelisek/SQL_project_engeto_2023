@@ -1,3 +1,9 @@
+-- tvorba primární tabulky t_jan_pelisek_project_SQL_primary_final
+-- k vytvoření této tabulky bylo zapotřebí spojit tabulky czechia_price, czechia_price_category, czechia_payroll a czechia_payroll_industry_brunch
+-- začal jsem vytvořením dvou dočasných tabulek, první spojením tabulek s daty o cenách základních potravin a druhou spojením tabulek s daty mezd, při tomto kroku jsem si z tabulek vytáhl pouze data, která nás v tomto projektu budou zajímat (tzn. v první tabulce jsem si data o časovém období upravil na roky, ceny potravin jsem si pro dané roky zprůměroval a v druhé tabulce jsem si vybral pouze data o mzdách pro přepočtený počet zaměstnanců na plný úvazek, pouze pro období shodné s prvné tabulkou a odstranil NULL hodnoty v tabulce czechia_payroll) a v druhé tebulce jsem se pomocí LEFT JOIN zbavil NULL hodnot a upravil období tak, aby se shodovalo s obdobím v první tabulce, 
+
+
+
 CREATE TEMPORARY TABLE czechia_price_temporary AS
 SELECT
 	YEAR(cp.date_from) AS 'year',
