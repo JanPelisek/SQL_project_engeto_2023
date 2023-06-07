@@ -10,3 +10,5 @@ Jako dodatečný materiál připravte i tabulku s HDP, GINI koeficientem a popul
 Data pocházejí z portálu otevřených dat České republiky
 
 **[Primární tabulka](/primary_table.sql) -** obsahuje data mezd (pro přepočtený počet zaměstnanců na plný úvazek) a cen základních potravin mezi roky 2006 - 2018.
+
+**[Sekundární tabulka](/secondary_table.sql) -** obsahuje data HDP, Gini koeficientů a populace evropských států mezi roky 2006 - 2018.
