@@ -7,9 +7,7 @@ SELECT
 FROM t_jan_pelisek_project_sql_primary_final 
 GROUP BY industry_branch_name, `year`
 
-
-
-
+CREATE OR REPLACE VIEW view_q1_v2 AS
 SELECT 
 	`year`,
 	industry_branch_name,
@@ -20,3 +18,6 @@ SELECT
 		ELSE 0
 	END is_rising
 FROM view_q1 
+
+SELECT * FROM view_q1_v2 
+WHERE previous_payroll IS NOT NULL AND is_rising = 0
