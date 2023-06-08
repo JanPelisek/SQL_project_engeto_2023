@@ -1,0 +1,22 @@
+CREATE OR REPLACE VIEW view_q1 AS 
+SELECT 
+	`year`,
+	industry_branch_name,
+	avg_payroll_value,
+	LAG(avg_payroll_value,1) OVER (PARTITION BY industry_branch_name ORDER BY `year`) AS previous_payroll
+FROM t_jan_pelisek_project_sql_primary_final 
+GROUP BY industry_branch_name, `year`
+
+
+
+
+SELECT 
+	`year`,
+	industry_branch_name,
+	avg_payroll_value,
+	previous_payroll, 
+	CASE 
+		WHEN previous_payroll < avg_payroll_value THEN 1
+		ELSE 0
+	END is_rising
+FROM view_q1 
