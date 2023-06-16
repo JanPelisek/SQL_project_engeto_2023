@@ -8,6 +8,7 @@
 CREATE TEMPORARY TABLE czechia_price_temporary AS
 SELECT
 	YEAR(cp.date_from) AS 'year', -- data o časovém období jsem upravil na roky
+	cpc.code,
 	cpc.name,
 	round(AVG(cp.value),2) AS 'avg_price_value', -- ceny potravin jsem si pro dané roky zprůměroval
 	cpc.price_unit 
@@ -21,6 +22,7 @@ SELECT * FROM czechia_price_temporary
 CREATE TEMPORARY TABLE czechia_payroll_temporary AS
 SELECT
 	cp.payroll_year AS 'year',
+	cpib.code,
 	cpib.name AS 'industry_branch_name',
 	round(avg(CP.value)) AS 'avg_payroll_value' 
 FROM czechia_payroll cp
@@ -33,13 +35,17 @@ WHERE cp.value_type_code = 5958 -- pouze data o mzdách
 GROUP BY cpib.name, cp.payroll_year
 ORDER BY cpib.name, cp.payroll_year
 
+SELECT * FROM czechia_payroll_temporary
+
 -- po vytvoření těchto dočasných tabulek, je stačilo pouze spojit a vytvořit tím finální tabulku, ve které nebylo potřeba nic upravovat.
-CREATE TABLE t_jan_pelisek_project_SQL_primary_final AS
+CREATE OR REPLACE TABLE t_jan_pelisek_project_SQL_primary_final AS
 SELECT
 	cpayt.year,
+	cpayt.code AS 'branch_code',
 	cpayt.industry_branch_name,
 	cpayt.avg_payroll_value,
-	cpricet.name,
+	cpricet.code AS 'product_code',
+	cpricet.name AS 'product_name',
 	cpricet.avg_price_value,
 	cpricet.price_unit
 FROM czechia_payroll_temporary cpayt
