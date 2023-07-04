@@ -1,4 +1,4 @@
--- vytvořil jsem si tabulku s daty pro požadované produkty pro požadované období
+-- vytvořil jsem si tabulku s daty pro požadované produkty v daném období
 CREATE OR REPLACE TEMPORARY TABLE tt_q2_products AS
 SELECT DISTINCT 
 	`year`,
