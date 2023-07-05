@@ -16,7 +16,6 @@ Data pocházejí z portálu otevřených dat České republiky
 ## Výzkumné otázky
 
 - **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**
-  - [Datový podklad](/q1.sql)
 
 |year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
 |----|--------------------|-----------------|----------------|---------|
@@ -45,7 +44,8 @@ Data pocházejí z portálu otevřených dat České republiky
 |2014|Těžba a dobývání|31302|31487|0|
 |2015|Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu|40453|41094|0|
 |2016|Těžba a dobývání|31626|31809|0|
-  
+
+   - [Datový podklad](/q1.sql)
 - **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**
 
 |year|product_name|avg_price_value|price_unit|avg_payroll|units_per_payroll|
