@@ -20,31 +20,31 @@ Data pocházejí z portálu otevřených dat České republiky
 
 |year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
 |----|--------------------|-----------------|----------------|---------|
-|2013|Administrativní a podpůrné činnosti|16829|17041|0|
-|2009|Činnosti v oblasti nemovitostí|20706|20790|0|
-|2013|Činnosti v oblasti nemovitostí|22152|22553|0|
-|2011|Doprava a skladování|23062|23063|0|
-|2013|Informační a komunikační činnosti|46155|46641|0|
-|2013|Kulturní, zábavní a rekreační činnosti|20511|20808|0|
-|2013|Peněžnictví a pojišťovnictví|46317|50801|0|
-|2010|Profesní, vědecké a technické činnosti|31602|31791|0|
-|2013|Profesní, vědecké a technické činnosti|31825|32817|0|
-|2013|Stavebnictví|22379|22850|0|
+|2009|Zemědělství, lesnictví, rybářství|17645|17764|0|
 |2009|Těžba a dobývání|28361|29273|0|
-|2013|Těžba a dobývání|31487|32540|0|
-|2014|Těžba a dobývání|31302|31487|0|
-|2016|Těžba a dobývání|31626|31809|0|
 |2009|Ubytování, stravování a pohostinství|12334|12472|0|
-|2011|Ubytování, stravování a pohostinství|13131|13205|0|
-|2013|Velkoobchod a maloobchod; opravy a údržba motorových vozidel|23130|23324|0|
+|2009|Činnosti v oblasti nemovitostí|20706|20790|0|
+|2010|Vzdělávání|23023|23416|0|
+|2010|Profesní, vědecké a technické činnosti|31602|31791|0|
 |2010|Veřejná správa a obrana; povinné sociální zabezpečení|26944|27035|0|
+|2011|Ubytování, stravování a pohostinství|13131|13205|0|
+|2011|Doprava a skladování|23062|23063|0|
 |2011|Veřejná správa a obrana; povinné sociální zabezpečení|26331|26944|0|
 |2011|Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu|40202|40296|0|
+|2013|Kulturní, zábavní a rekreační činnosti|20511|20808|0|
+|2013|Těžba a dobývání|31487|32540|0|
+|2013|Administrativní a podpůrné činnosti|16829|17041|0|
 |2013|Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu|40762|42657|0|
-|2015|Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu|40453|41094|0|
-|2010|Vzdělávání|23023|23416|0|
+|2013|Činnosti v oblasti nemovitostí|22152|22553|0|
+|2013|Peněžnictví a pojišťovnictví|46317|50801|0|
+|2013|Velkoobchod a maloobchod; opravy a údržba motorových vozidel|23130|23324|0|
 |2013|Zásobování vodou; činnosti související s odpady a sanacemi|23616|23718|0|
-|2009|Zemědělství, lesnictví, rybářství|17645|17764|0|
+|2013|Profesní, vědecké a technické činnosti|31825|32817|0|
+|2013|Informační a komunikační činnosti|46155|46641|0|
+|2013|Stavebnictví|22379|22850|0|
+|2014|Těžba a dobývání|31302|31487|0|
+|2015|Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu|40453|41094|0|
+|2016|Těžba a dobývání|31626|31809|0|
   
 - **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**
 
