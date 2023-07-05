@@ -48,6 +48,13 @@ Data pocházejí z portálu otevřených dat České republiky
   
 - **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**
 
+|year|product_name|avg_price_value|price_unit|avg_payroll|units_per_payroll|
+|----|------------|---------------|----------|-----------|-----------------|
+|2006|Chléb konzumní kmínový|16.12|kg|21165.32|1312.99 kg|
+|2006|Mléko polotučné pasterované|14.44|l|21165.32|1465.74 l|
+|2018|Chléb konzumní kmínový|24.24|kg|33091.63|1365.17 kg|
+|2018|Mléko polotučné pasterované|19.82|l|33091.63|1669.61 l|
+
   - [Datový podklad](/q2.sql)
 - **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
   - [Datový podklad](/q3.sql)
