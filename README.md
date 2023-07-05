@@ -16,7 +16,7 @@ Data pocházejí z portálu otevřených dat České republiky
 ## Výzkumné otázky
 
 - **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**
-  - [Řešení](/q1.sql)
+  - [Datový podklad](/q1.sql)
 
 |year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
 |----|--------------------|-----------------|----------------|---------|
@@ -50,9 +50,9 @@ Data pocházejí z portálu otevřených dat České republiky
 
   - [Datový podklad](/q2.sql)
 - **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
-  - [Řešení](/q3.sql)
+  - [Datový podklad](/q3.sql)
 - **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
-  - [Řešení](q4.sql)
+  - [Datový podklad](q4.sql)
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
 ![image](https://github.com/JanPelisek/SQL_project_engeto_2023/assets/52496899/2a2e2364-2bc6-49e4-bc32-985d4fea9f88)
   - [Datový podklad](q5.sql)
