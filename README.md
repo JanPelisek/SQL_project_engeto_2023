@@ -26,7 +26,7 @@ Data pocházejí z portálu otevřených dat České republiky
 - **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
   - [Řešení](q4.sql)
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
-  - ![image](https://github.com/JanPelisek/SQL_project_engeto_2023/assets/52496899/9b5c0ce6-c10a-44e1-b1be-0b57b96ff4de)
+   ![image](https://github.com/JanPelisek/SQL_project_engeto_2023/assets/52496899/9b5c0ce6-c10a-44e1-b1be-0b57b96ff4de)
   - [Datový podklad](q5.sql)
 
  
