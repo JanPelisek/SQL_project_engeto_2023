@@ -59,9 +59,58 @@ Data pocházejí z portálu otevřených dat České republiky
   - [Datový podklad](/q2.sql)
     
 - **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
+
+|product_name|perc_narust_final|
+|------------|-----------------|
+|Cukr krystalový|-1.92|
+|Rajská jablka červená kulatá|-0.74|
+|Banány žluté|0.81|
+|Vepřová pečeně s kostí|0.99|
+|Přírodní minerální voda uhličitá|1.02|
+|Šunkový salám|1.85|
+|Jablka konzumní|2.01|
+|Pečivo pšeničné bílé|2.2|
+|Hovězí maso zadní bez kosti|2.53|
+|Kapr živý|2.6|
+|Jakostní víno bílé|2.7|
+|Pivo výčepní, světlé, lahvové|2.85|
+|Eidamská cihla|2.92|
+|Mléko polotučné pasterované|2.98|
+|Rostlinný roztíratelný tuk|3.23|
+|Kuřata kuchaná celá|3.38|
+|Pomeranče|3.6|
+|Jogurt bílý netučný|3.95|
+|Chléb konzumní kmínový|3.97|
+|Konzumní brambory|4.18|
+|Rýže loupaná dlouhozrnná|5.0|
+|Mrkev|5.23|
+|Pšeničná mouka hladká|5.24|
+|Těstoviny vaječné|5.26|
+|Vejce slepičí čerstvá|5.56|
+|Máslo|6.68|
+|Papriky|7.29|
+
+
   - [Datový podklad](/q3.sql)
     
 - **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
+
+|year|avg_pay_rise|avg_price_rise|difference|
+|----|------------|--------------|----------|
+|2009|2.84|-6.59|9.43|
+|2013|-0.78|6.01|6.79|
+|2018|7.88|2.41|5.47|
+|2016|3.93|-1.41|5.34|
+|2012|2.61|7.47|4.86|
+|2015|2.90|-0.69|3.59|
+|2014|2.55|-0.62|3.17|
+|2011|2.33|4.84|2.51|
+|2007|6.91|9.26|2.35|
+|2008|7.08|8.92|1.84|
+|2017|6.40|7.06|0.66|
+|2010|2.15|1.52|0.63|
+
+
   - [Datový podklad](q4.sql)
     
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
