@@ -17,7 +17,8 @@ Data pocházejí z portálu otevřených dat České republiky
 
 - **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**
   - [Řešení](/q1.sql)
- |year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
+
+|year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
 |----|--------------------|-----------------|----------------|---------|
 |2013|Administrativní a podpůrné činnosti|16829|17041|0|
 |2009|Činnosti v oblasti nemovitostí|20706|20790|0|
