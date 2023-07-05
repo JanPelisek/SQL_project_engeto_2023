@@ -46,6 +46,7 @@ Data pocházejí z portálu otevřených dat České republiky
 |2016|Těžba a dobývání|31626|31809|0|
 
    - [Datový podklad](/q1.sql)
+
 - **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**
 
 |year|product_name|avg_price_value|price_unit|avg_payroll|units_per_payroll|
@@ -56,10 +57,13 @@ Data pocházejí z portálu otevřených dat České republiky
 |2018|Mléko polotučné pasterované|19.82|l|33091.63|1669.61 l|
 
   - [Datový podklad](/q2.sql)
+    
 - **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
   - [Datový podklad](/q3.sql)
+    
 - **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
   - [Datový podklad](q4.sql)
+    
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
 ![image](https://github.com/JanPelisek/SQL_project_engeto_2023/assets/52496899/2a2e2364-2bc6-49e4-bc32-985d4fea9f88)
   - [Datový podklad](q5.sql)
