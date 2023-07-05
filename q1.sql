@@ -15,4 +15,5 @@ GROUP BY industry_branch_name, `year`
 )
 SELECT * FROM cte_q1 -- nakonec jsem zadal dotaz na finální view a vytáhl si pouze data, kde mzdy vůči předchozímu roku klesly.
 WHERE previous_payroll IS NOT NULL AND is_rising = 0
+ORDER BY `year`
 -- nepočítal jsem s možností, kde by byly mzdy za oba porovnávané roky stejné, protože je velice nepravděpodobná. Pokud by ta situace nastala, řešil by jsem ji tím, že by jsem do sloupce `is_rising` dal pouze hodnoty 0 a zbytek by jsem nechal NULL.
