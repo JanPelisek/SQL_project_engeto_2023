@@ -7,14 +7,14 @@ FROM t_jan_pelisek_project_sql_primary_final
 ORDER BY product_name, `year`
 ),
 price_rise AS (
-SELECT -- přidal jsem LAG() funkci pro zobrazení předchozích hodnot cen
+SELECT
 	*, -- přidal jsem výpočet meziročního procentuálního nárustu
 	LAG(avg_price_value, 1) OVER (PARTITION BY product_name ORDER BY `year` ASC) AS previous_price_value,
 	round(((avg_price_value - 	LAG(avg_price_value, 1) OVER (PARTITION BY product_name ORDER BY `year` ASC))/ 	LAG(avg_price_value, 1) OVER (PARTITION BY product_name ORDER BY `year` ASC)) * 100, 2) AS perc_narust_price
 FROM price_default
 ),
 avg_price_rise AS (
-SELECT -- výpočet průměrného procentuálního nárůstu
+SELECT 
 	`year`,
 	round(avg(perc_narust_price), 2) AS avg_price_rise
 FROM price_rise
@@ -29,20 +29,20 @@ FROM t_jan_pelisek_project_sql_primary_final
 ORDER BY product_name, `year`
 ),
 pay_rise AS (
-SELECT -- přidal jsem LAG() funkci pro zobrazení předchozích hodnot mezd
-	*, -- přidal jsem výpočet meziročního nárůstu mezd	
+SELECT 
+	*,	
 	LAG(avg_payroll_value, 1) OVER (PARTITION BY industry_branch_name ORDER BY `year` ASC) AS previous_pay_value,
 	round(((avg_payroll_value - LAG(avg_payroll_value, 1) OVER (PARTITION BY industry_branch_name ORDER BY `year` ASC))/ LAG(avg_payroll_value, 1) OVER (PARTITION BY industry_branch_name ORDER BY `year` ASC)) * 100, 2) AS perc_narust_pay
 FROM pay_default
 ),
 avg_pay_rise AS (
-SELECT -- výpočet průměrného procentuálního nárůstu
+SELECT
 	`year`,
 	round(avg(perc_narust_pay), 2) AS avg_pay_rise
 FROM pay_rise
 GROUP BY `year`
 )
-SELECT -- finální dotaz s výpočtem rozdílu
+SELECT
 	api.`year`,
 	apy.`avg_pay_rise`,
 	api.avg_price_rise,
