@@ -1,10 +1,11 @@
-WITH avg_price AS (
+WITH 
+avg_price AS (
 SELECT DISTINCT -- data cen pro požadované produkty a období
 	`year`,
-    product_name,
-    product_code,
-    avg_price_value,
-    price_unit
+	product_name,
+	product_code,
+	avg_price_value,
+	price_unit
 FROM t_jan_pelisek_project_sql_primary_final
 WHERE product_code IN (111301, 114201) AND `year` IN (2006, 2018)
 ),
@@ -30,7 +31,7 @@ SELECT
 FROM pay_value
 WHERE `year` = 2006
 )
-SELECT -- finální dotaz 
+SELECT
 	pr.`year`,
 	pr.product_name, 
 	pr.avg_price_value, 
