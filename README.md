@@ -16,6 +16,7 @@ Data pocházejí z portálu otevřených dat České republiky
 ## Výzkumné otázky
 
 - **Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?**
+
    - Z pravidla mzdy ve všech odvětvích rostly, kromě roku 2013, kde byl zaznamenaný pokles v 11 z 19 odvětví. V tabulce níže jsou vypsány roky a odvětví, kde mzda oproti minulému roku klesla.
 
 |year|industry_branch_name|avg_payroll_value|previous_payroll|is_rising|
@@ -49,6 +50,7 @@ Data pocházejí z portálu otevřených dat České republiky
    - [Datový podklad](/q1.sql)
 
 - **Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?**
+
    - V tabulce níže je zaznamenáno, kolik kg chleba a kolik litrů mléka se dalo koupit za průměrnou výplatu v roce 2006 a v roce 2018. V roce 2018 se dalo za průměrnou výplatu pořídit o **52,18 kg chleba** a **203,87 l mléka** více než v roce 2006.
 
 |year|product_name|avg_price_value|price_unit|avg_payroll|units_per_payroll|
@@ -61,6 +63,7 @@ Data pocházejí z portálu otevřených dat České republiky
   - [Datový podklad](/q2.sql)
     
 - **Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?**
+  
    - Nejpomaleji zdrařoval cukr se záporným meziročním percentuálním nárůstem -1.92%. Naopak nejrychleji zdražující potrvinou byli papriky s meziročním percentuálním nárůstem 7.29%. Průměrně potraviny zdražili o 3.16%.
 
 |product_name|perc_narust_final|
@@ -97,6 +100,7 @@ Data pocházejí z portálu otevřených dat České republiky
   - [Datový podklad](/q3.sql)
     
 - **Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?**
+
    - Nejvýraznější rozdíl nastal v roce 2009 (o 9.43%) a naopak nejmenší nastal hned poté v roce 2010 (o 0.63%). Průměrný rozdíl je 3.89%.
   
 |year|avg_pay_rise|avg_price_rise|difference|
@@ -118,6 +122,9 @@ Data pocházejí z portálu otevřených dat České republiky
   - [Datový podklad](q4.sql)
     
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
-  - Růst a pokles HDP se na cenách potravin a výšce mezd projevuje se zpožděním od jednoho do tří let. Povětšinou reagují mzdy rychleji než ceny potravin. Viz následující graf. 
+
+  - Růst a pokles HDP se na cenách potravin a výšce mezd projevuje se zpožděním od jednoho do tří let. Povětšinou reagují mzdy rychleji než ceny potravin. Viz následující graf.
+  
 ![image](Picture1.png)
+
   - [Datový podklad](q5.sql)
