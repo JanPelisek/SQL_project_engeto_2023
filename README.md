@@ -118,6 +118,6 @@ Data pocházejí z portálu otevřených dat České republiky
   - [Datový podklad](q4.sql)
     
 - **Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?**
-  - Z grafu níže se dá vypozorovat, že křivky růstu hdp, cen a mezd spolu úzce souvisí
+  - Růst a pokles HDP se na cenách potravin a výšce mezd projevuje se zpožděním od jednoho do tří let. Povětšinou reagují mzdy rychleji než ceny potravin. Viz následující graf. 
 ![image](Picture1.png)
   - [Datový podklad](q5.sql)
